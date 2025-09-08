@@ -13,7 +13,7 @@ import (
 var reader = bufio.NewReader(os.Stdin)
 
 type Contact struct {
-	Name        string
+	Name        string `json:"name"`
 	IsAvailable bool
 }
 type Contacts []Contact

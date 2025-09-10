@@ -1,0 +1,15 @@
+package test
+
+import (
+	"strconv"
+)
+
+func Foo(input int) string {
+	isfoo := (input % 3) == 0
+
+	if isfoo {
+		return "Foo"
+	}
+	return strconv.Itoa(input)
+
+}
